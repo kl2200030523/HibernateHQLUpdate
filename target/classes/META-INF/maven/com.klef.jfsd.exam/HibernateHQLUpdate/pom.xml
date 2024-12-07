@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.klef.jfsd.exam</groupId>
+  <artifactId>HibernateHQLUpdate</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>HibernateHQLUpdate</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+  </properties>
+
+  <dependencies>
+    <!-- Hibernate Core -->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>5.6.0.Final</version>
+    </dependency>
+
+    <!-- MySQL Connector -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.25</version>
+    </dependency>
+
+    <!-- JUnit for Testing -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.10.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!-- Compiler Plugin -->
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.13.0</version>
+          <configuration>
+            <release>17</release>
+          </configuration>
+        </plugin>
+
+        <!-- Surefire Plugin for Testing -->
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
+
+        <!-- Clean Plugin -->
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.4.0</version>
+        </plugin>
+
+        <!-- Resources Plugin -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.3.1</version>
+        </plugin>
+
+        <!-- JAR Plugin -->
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.4.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
